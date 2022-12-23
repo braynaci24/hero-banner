@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('../fonts/itcavantgardepro-bold-webfont.woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir.ttc');
+}
+
+.hero {
+  display: flex;
+}
+
+.hero .hero-image-container {
+  width: 50%;
+}
+
+.hero .hero-image-container .hero-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .hero-content-container {
+  width: 50%;
+  padding: 96px 0 96px 80px;
+}
+
+.hero .hero-content-container .hero-content-big-title {
+  font-weight: 700;
+  font-size: 31px;
+  color: #000;
+  line-height: 40px;
+  font-family: 'ITC Avant Garde Gothic Pro';
+  width: 55%;
+}
+
+.hero .hero-content-container .hero-description {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 12px 0 32px;
+  font-family: 'Avenir';
+  color: #666;
+  width: 55%;
+}
+
+.hero-content-container .hero-link {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 17px;
+  text-underline-offset: 10px;
+  color: #000;
+  font-family: 'Avenir';
+}
+
+.owl-carousel-product {
+  margin-top: 70px;
+}
+
+.owl-carousel-product .product-slider-item {
+  width: 300px;
+}
+
+.product-information {
+  margin-bottom: 30px;
+}
+
+.product-information .product-variant-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-information .product-variant-price .price {
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'Avenir';
+}
+
+.product-information .product-name {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 14px;
+  margin: 12px 0 9px 0;
+  display: inline-block;
+}
+
+.variants {
+  display: flex;
+  align-items: center;
+}
+
+.product-information .product-variant-price .blue {
+  background-color: #99C3CC;
+  position: relative;
+  border: 3px solid #000;
+  border-radius: 100%;
+}
+
+.product-information .product-variant-price .brown {
+  background-color: #CC9999;
+}
+
+.product-information .product-variant-price .purple {
+  background-color: #CB99CC;
+}
+
+.product-information .product-variant-price .green {
+  background-color: #A6CC99;
+}
+
+.product-information .product-variant-price .product-variant {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.product-variant-selected {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #fff;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  left: -2px;
+  top: -2px;
+}
+
+
+.product-slider-next {
+  position: absolute;
+  right: 25px;
+  top: 185px;
+  padding: 20px;
+  border: 1px solid #d2c7c7;
+}
+
+.overlay {
+  display: none;
+}
+
+@media(max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .hero-content-container {
+    padding: 30px 0 0 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .hero .hero-image-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero .hero-image-container .hero-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .hero .hero-content-container .hero-content {
+    width: 75%;
+    padding: 30px;
+  }
+
+  .hero .hero-content-container .hero-content-big-title {
+    font-size: 20px;
+    color: #fff;
+    line-height: 26px;
+    width: 100%;
+  }
+
+  .hero-content-container .hero-link {
+    margin-top: 16px;
+    display: block;
+    color: #fff;
+  }
+
+  .hero .hero-content-container .hero-description {
+    display: none;
+  }
+
+  .hero-content {
+    width: 77%;
+    position: absolute;
+    top: -228px;
+    padding: 11px 0 0 28px;
+  }
+
+  .hero-slider-product {
+    width: 148px !important;
+  }
+
+  .product-variant-price {
+    flex-direction: column;
+  }
+
+  .owl-carousel-product {
+    margin-top: -75px;
+    margin-left: 4px;
+  }
+
+  .owl-carousel-product .product-slider-item {
+    width: 148px;
+  }
+
+  .owl-item {
+    width: 170px !important;
+  }
+
+  .product-information .product-variant-price .price {
+    margin-bottom: 8px;
+  }
+}
